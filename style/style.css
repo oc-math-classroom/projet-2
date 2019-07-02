@@ -1,16 +1,42 @@
 /* reset */
-div, h1, h2, h3, h4{
+div, h1, h2, h3, h4, p{
     margin: 0;
     padding: 0;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .page-wrapper{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     margin: auto;
     background: #fffafa;
+}
+
+.date-lieu{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: 300;
+}
+
+.organisme-title{
+    font-weight: 400;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-transform: uppercase;
+}
+
+.description{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    padding-right: 2rem;
+}
+
+.description-poste{
+    font-weight: 400;
+    display: block; 
 }
 
 header{
@@ -67,7 +93,7 @@ header{
     padding-bottom: 1rem;
 }
 
-.bloc-section .fas{
+.bloc-section-title .fas{
     text-indent: 0.1rem;
     color: #e53935;
     margin-right: 2rem;
@@ -79,6 +105,21 @@ header{
     padding-bottom: 5px;
     margin-bottom: 2rem;
     display: flex;
+}
+
+.dot-wrapper{
+    display: flex;
+}
+
+.dot-wrapper .far, .dot-wrapper .fas{
+    color: #e53935;
+    margin-right: 0.6rem;
+    line-height: 1.1rem;
+}
+
+.dot-wrapper .fas{
+    font-size: 0.5rem;
+    line-height: 1rem;
 }
 
 .section-title{
@@ -149,7 +190,7 @@ header{
     border-bottom: 4px solid #e53935;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 992px){
 
     .page-wrapper{
         max-width: 1200px;
@@ -159,4 +200,17 @@ header{
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(40, 40px);
     }
+
+}
+
+@media (min-width: 768px){
+
+    .element-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
 }
