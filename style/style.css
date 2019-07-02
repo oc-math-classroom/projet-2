@@ -1,5 +1,3 @@
-body{}
-
 /* reset */
 div, h1, h2, h3, h4{
     margin: 0;
@@ -29,7 +27,7 @@ header{
 
 #formation{
     grid-column: 2/4;
-    /grid-row: 7/21;
+    grid-row: 7/21;
 }
 
 #experience-pro{
