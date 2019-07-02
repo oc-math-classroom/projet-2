@@ -1,5 +1,5 @@
 /* reset */
-div, h1, h2, h3, h4, p{
+div, h1, h2, h3, h4{
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -10,34 +10,9 @@ div, h1, h2, h3, h4, p{
     font-weight: 400;
     font-size: 14px;
     margin: auto;
-    background: #fffafa;
+    background: white;
 }
 
-.date-lieu{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    font-weight: 300;
-}
-
-.organisme-title{
-    font-weight: 400;
-    grid-column: 2/4;
-    grid-row: 1/2;
-    text-transform: uppercase;
-}
-
-.description{
-    grid-column: 2/4;
-    grid-row: 2/3;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-    padding-right: 2rem;
-}
-
-.description-poste{
-    font-weight: 400;
-    display: block; 
-}
 
 header{
     grid-column: 2/4;
@@ -107,14 +82,35 @@ header{
     display: flex;
 }
 
-.dot-wrapper{
-    display: flex;
+.date-lieu{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-weight: 300;
 }
 
+.organisme-title{
+    font-weight: 400;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-transform: uppercase;
+}
+
+.description{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    padding-right: 2rem;
+}
+
+.description-poste{
+    font-weight: 400;
+    display: block; 
+}
+
+
 .dot-wrapper .far, .dot-wrapper .fas{
-    color: #e53935;
-    margin-right: 0.6rem;
-    line-height: 1.1rem;
+    display: none;
 }
 
 .dot-wrapper .fas{
@@ -205,12 +201,43 @@ header{
 
 @media (min-width: 768px){
 
+    /* reset */
+    p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    }
+
     .element-wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto auto;
         padding-top: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .dot-wrapper{
+        display: flex;
+    }
+    
+    .dot-wrapper .far, .dot-wrapper .fas{
+        display: inline;
+        color: #e53935;
+        margin-right: 0.6rem;
+        line-height: 1.1rem;
+    }
+    
+    .dot-wrapper .fas{
+        display: inline;
+        font-size: 0.5rem;
+        line-height: 1rem;
+        margin-right: 1rem;
+    }
+
+    #about .bloc-texte-side{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        line-height: 1.1rem;
     }
 
 }
