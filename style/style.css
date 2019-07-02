@@ -1,32 +1,69 @@
-body{
-    
+body{}
+
+/* reset */
+div, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.bloc-section{
+    padding-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.bloc-section .fas{
+    text-indent: 0.1rem;
+    color: #e53935;
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+.bloc-section-title{
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 5px;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.section-title{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.9rem;
+    text-transform: uppercase;
 }
 
 .page-wrapper{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     max-width: 768px;
+    font-size: 14px;
     margin: auto;
     background: #fffafa;
 }
 
-/* reset */
-div, h1, h2, h3, h4{
-    margin: 0;
-    padding: 0;
-}
-
 .bloc-texte-side, .bloc-bouton-side, .bloc-icon-side{
     background: linear-gradient(to left, #e53935 50px, #f44336);
-    color: whitesmoke;
+    color: white;
     padding: 1rem;
+}
+
+.bloc-sider{
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .bandeau-title{
     background: linear-gradient(to left, #212121 50px, black);
-    color: whitesmoke;
+    color: white;
     text-align: center;
-    line-height: 2rem;
+    line-height: 2.2rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 .bloc-icon-side{
@@ -66,4 +103,8 @@ div, h1, h2, h3, h4{
 .underline-color{
     padding-bottom: 5px;
     border-bottom: 4px solid #e53935;
+}
+
+@media (max-width: 576px){
+    font-size: 1rem;
 }
