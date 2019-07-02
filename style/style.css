@@ -14,51 +14,36 @@ div, h1, h2, h3, h4{
 }
 
 
-header{
-    grid-column: 2/4;
-    grid-row: 1/7;
+.bloc-title{
+    padding: 3rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
 }
 
-#photo{
-    grid-column: 1/2;
-    grid-row: 1/40;
-    background: linear-gradient(to left, #e53935 50px, #f44336);
-
+.header-title{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+    text-indent: 0.18rem;
 }
 
-#formation{
-    grid-column: 2/4;
-    grid-row: 7/21;
+.title-color-style{
+    font-weight: 400;
+    color: #e53935;
 }
 
-#experience-pro{
-    grid-column: 2/4;
-    grid-row: 21/30;
+.header-subtitle{
+    font-weight: 400;
+    font-size: 2.1rem;
+    color:#455A64;
+    text-transform: capitalize;
 }
 
-#recommandations{
-    grid-column: 2/4;
-    grid-row: 32;
-}
-
-#contact{
-    grid-column: 1/2;
-    grid-row: 8/14
-}
-
-#about{
-    grid-column: 1/2;
-    grid-row: 14/24;
-}
-
-#skills{
-    grid-column: 1/2;
-    grid-row: 24/37;
-}
-
-#loisirs{
-    grid-column: 1/2;
-    grid-row: 37;
+.underline-color{
+    padding-bottom: 5px;
+    border-bottom: 4px solid #e53935;
 }
 
 .bloc-section{
@@ -154,36 +139,9 @@ header{
     font-size: 1.5rem;
 }
 
-.bloc-title{
-    padding: 3rem;
-    padding-top: 5rem;
-    margin-bottom: 2rem;
-}
 
-.header-title{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 3rem;
-    text-transform: uppercase;
-    line-height: 1.75rem;
-    text-indent: 0.18rem;
-}
+.bouton-linkedin{
 
-.title-color-style{
-    font-weight: 400;
-    color: #e53935;
-}
-
-.header-subtitle{
-    font-weight: 400;
-    font-size: 2.1rem;
-    color:#455A64;
-    text-transform: capitalize;
-}
-
-.underline-color{
-    padding-bottom: 5px;
-    border-bottom: 4px solid #e53935;
 }
 
 @media (min-width: 992px){
@@ -196,6 +154,52 @@ header{
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(40, 40px);
     }
+
+    header{
+        grid-column: 2/4;
+        grid-row: 1/7;
+    }
+    
+    #photo{
+        grid-column: 1/2;
+        grid-row: 1/40;
+        background: linear-gradient(to left, #e53935 50px, #f44336);
+    }
+    
+    #formation{
+        grid-column: 2/4;
+        grid-row: 7/21;
+    }
+    
+    #experience-pro{
+        grid-column: 2/4;
+        grid-row: 21/30;
+    }
+    
+    #recommandations{
+        grid-column: 2/4;
+        grid-row: 32;
+    }
+    
+    #contact{
+        grid-column: 1/2;
+        grid-row: 8/14
+    }
+    
+    #about{
+        grid-column: 1/2;
+        grid-row: 14/24;
+    }
+    
+    #skills{
+        grid-column: 1/2;
+        grid-row: 24/37;
+    }
+    
+    #loisirs{
+        grid-column: 1/2;
+        grid-row: 37;
+    }    
 
 }
 
