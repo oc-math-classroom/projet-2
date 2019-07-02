@@ -7,6 +7,61 @@ div, h1, h2, h3, h4{
     font-weight: normal;
 }
 
+.page-wrapper{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: auto;
+    background: #fffafa;
+}
+
+header{
+    grid-column: 2/4;
+    grid-row: 1/7;
+}
+
+#photo{
+    grid-column: 1/2;
+    grid-row: 1/40;
+    background: linear-gradient(to left, #e53935 50px, #f44336);
+
+}
+
+#formation{
+    grid-column: 2/4;
+    /grid-row: 7/21;
+}
+
+#experience-pro{
+    grid-column: 2/4;
+    grid-row: 21/30;
+}
+
+#recommandations{
+    grid-column: 2/4;
+    grid-row: 32;
+}
+
+#contact{
+    grid-column: 1/2;
+    grid-row: 8/14
+}
+
+#about{
+    grid-column: 1/2;
+    grid-row: 14/24;
+}
+
+#skills{
+    grid-column: 1/2;
+    grid-row: 24/37;
+}
+
+#loisirs{
+    grid-column: 1/2;
+    grid-row: 37;
+}
+
 .bloc-section{
     padding-top: 3rem;
     margin-left: 3rem;
@@ -35,19 +90,10 @@ div, h1, h2, h3, h4{
     text-transform: uppercase;
 }
 
-.page-wrapper{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    max-width: 768px;
-    font-size: 14px;
-    margin: auto;
-    background: #fffafa;
-}
-
 .bloc-texte-side, .bloc-bouton-side, .bloc-icon-side{
     background: linear-gradient(to left, #e53935 50px, #f44336);
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .bloc-sider{
@@ -68,9 +114,9 @@ div, h1, h2, h3, h4{
 
 .bloc-icon-side{
     text-align: center;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     padding: 2rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .bloc-title{
@@ -105,6 +151,14 @@ div, h1, h2, h3, h4{
     border-bottom: 4px solid #e53935;
 }
 
-@media (max-width: 576px){
-    font-size: 1rem;
+@media (min-width: 1200px){
+
+    .page-wrapper{
+        max-width: 1200px;
+        font-size: 14px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(40, 40px);
+    }
 }
