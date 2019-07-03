@@ -5,8 +5,15 @@ div, h1, h2, h3, h4{
     font-weight: 400;
 }
 
+p{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
 ul{
     list-style-type: none;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 a{
@@ -36,7 +43,6 @@ a{
     font-weight: 200;
     font-size: 3rem;
     text-transform: uppercase;
-    line-height: 1.75rem;
     text-indent: 0.18rem;
 }
 
@@ -60,6 +66,8 @@ a{
 #photo{
     text-align: center;
     padding-top: 2rem;
+    background: linear-gradient(to left, #e53935 50px, #f44336);
+    padding-bottom: 2rem;
 }
 
 #ma-photo{
@@ -69,7 +77,7 @@ a{
 }
 
 #contact li{
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .bloc-section{
@@ -186,6 +194,7 @@ a{
     text-align: center;
     padding-top: 1rem;
     padding-right: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .bouton{
@@ -299,6 +308,15 @@ a{
     margin: 0;
     padding: 0;
     font-weight: 400;
+    }
+
+    .header-title{
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 1.75rem;
+        text-indent: 0.18rem;
     }
 
     .element-wrapper{
