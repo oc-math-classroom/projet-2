@@ -1,11 +1,20 @@
 /* reset */
-div, h1, h2, h3, h4, a, ul{
+div, h1, h2, h3, h4{
     margin: 0;
     padding: 0;
     font-weight: 400;
-    text-decoration: none;
+}
+
+ul{
     list-style-type: none;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* fin reset */
 
 .page-wrapper{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -46,6 +55,21 @@ div, h1, h2, h3, h4, a, ul{
 .underline-color{
     padding-bottom: 5px;
     border-bottom: 4px solid #e53935;
+}
+
+#photo{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#ma-photo{
+    max-width: 200px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 10px #b71c1c;
+}
+
+#contact li{
+    margin-bottom: 1rem;
 }
 
 .bloc-section{
@@ -115,7 +139,8 @@ div, h1, h2, h3, h4, a, ul{
 .bloc-texte-side, .bloc-bouton-side, .bloc-icon-side{
     background: linear-gradient(to left, #e53935 50px, #f44336);
     color: white;
-    padding: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .bloc-sider{
