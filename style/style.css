@@ -11,7 +11,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 /* fin reset */
@@ -136,6 +136,22 @@ a{
     text-transform: uppercase;
 }
 
+.nom-du-contact{
+    margin-bottom: 1rem;
+}
+
+.bloc-wrapper{
+    padding-top: 1rem;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.bloc-wrapper + .bloc-contact:odd{
+    grid-column: 2/3;
+}
+
 .bloc-texte-side, .bloc-bouton-side, .bloc-icon-side{
     background: linear-gradient(to left, #e53935 50px, #f44336);
     color: white;
@@ -168,6 +184,8 @@ a{
 
 .bloc-bouton-side{
     text-align: center;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
 }
 
 .bouton{
