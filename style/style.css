@@ -1,8 +1,10 @@
 /* reset */
-div, h1, h2, h3, h4{
+div, h1, h2, h3, h4, a, ul{
     margin: 0;
     padding: 0;
     font-weight: 400;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .page-wrapper{
@@ -139,9 +141,53 @@ div, h1, h2, h3, h4{
     font-size: 1.5rem;
 }
 
+.bloc-bouton-side{
+    text-align: center;
+}
+
+.bouton{
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.bouton-email{
+    background-color: #9C27B0;
+    border: 1px solid #9C27B0;
+    color: white;
+}
+
+.bouton-email:hover{
+    background-color: white;
+    color: #9C27B0;
+}
+
 
 .bouton-linkedin{
+    background-color: #4875B4;
+    border: 1px solid #4875B4;
+    color: white;
+}
 
+.bouton i{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.bouton-linkedin:hover{
+    background-color: white;
+    color: #4875B4;
 }
 
 @media (min-width: 992px){
