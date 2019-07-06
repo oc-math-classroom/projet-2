@@ -50,50 +50,50 @@ a{
     color: #e53935;
 }
 
-.header-subtitle{
+.header-subtitle {
     font-weight: 400;
     font-size: 2.1rem;
     color:#455A64;
     text-transform: capitalize;
 }
 
-.underline-color{
+.underline-color {
     padding-bottom: 5px;
     border-bottom: 4px solid #e53935;
 }
 
-#photo{
+#photo {
     text-align: center;
     padding-top: 2rem;
     background: linear-gradient(to left, #e53935 50px, #f44336);
     padding-bottom: 2rem;
 }
 
-#ma-photo{
+#ma-photo {
     max-width: 200px;
     border-radius: 100px;
     box-shadow: 2px 2px 10px #b71c1c;
 }
 
-#contact li{
+#contact li {
     padding-bottom: 1rem;
 }
 
-.bloc-section{
+.bloc-section {
     padding-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-bottom: 1rem;
 }
 
-.section-title{
+.section-title {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 
-.bloc-section-title .fas{
+.bloc-section-title .fas {
     text-indent: 0.1rem;
     color: #e53935;
     margin-right: 1rem;
@@ -107,13 +107,13 @@ a{
     display: flex;
 }
 
-.date-lieu{
+.date-place{
     grid-column: 1/2;
     grid-row: 1/2;
     font-weight: 300;
 }
 
-.organisme-title{
+.experience{
     font-weight: 400;
     grid-column: 2/4;
     grid-row: 1/2;
@@ -160,12 +160,8 @@ a{
 }
 
 .bloc-texte-side, .bloc-bouton-side, .bloc-icon-side{
-    background: linear-gradient(to left, #e53935 50px, #f44336);
-    color: white;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
+    background-color: #e53935; background: linear-gradient(to left, #e53935 50px, #f44336); color: white;
+    padding-top: 1.5rem; padding-left: 1.5rem; padding-bottom: 1rem; padding-right: 1.5rem;
 }
 
 .bloc-sider{
@@ -173,7 +169,8 @@ a{
     margin-right: 0.5rem;
 }
 
-.bandeau-title{
+.band-title{
+    background-color: black;
     background: linear-gradient(to left, #212121 50px, black);
     color: white;
     text-align: center;
@@ -191,23 +188,19 @@ a{
     font-size: 1.5rem;
 }
 
-.bloc-bouton-side{
+.bloc-button-side{
     text-align: center;
     padding-top: 1rem;
     padding-right: 1.5rem;
     padding-bottom: 1rem;
 }
 
-.bouton{
+.button{
     display: inline-block;
     font-weight: 400;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     text-align: center;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -215,30 +208,30 @@ a{
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.bouton-email{
+.button-email{
     background-color: #9C27B0;
     border: 1px solid #9C27B0;
     color: white;
 }
 
-.bouton-email:hover{
+.button-email:hover{
     background-color: white;
     color: #9C27B0;
 }
 
 
-.bouton-linkedin{
+.button-linkedin{
     background-color: #4875B4;
     border: 1px solid #4875B4;
     color: white;
 }
 
-.bouton i{
+.button i{
     font-size: 1.2rem;
     margin-right: 0.5rem;
 }
 
-.bouton-linkedin:hover{
+.button-linkedin:hover{
     background-color: white;
     color: #4875B4;
 }
@@ -345,6 +338,7 @@ a{
     #photo{
         grid-column: 1/2;
         grid-row: 1/40;
+        background-color: #e53935;
         background: linear-gradient(to left, #e53935 50px, #f44336);
     }
     
