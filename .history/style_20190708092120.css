@@ -159,7 +159,7 @@ body {
     grid-template-rows: auto;
 }
 
-.bloc-wrapper + .bloc-contact:nth-child(odd) {
+.bloc-wrapper + .bloc-contact:odd {
     grid-column: 2/3;
 }
 
